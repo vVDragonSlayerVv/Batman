@@ -215,7 +215,7 @@ body {
 }
 .text{
     margin-bottom: 30px;
-    width: 515px;
+    max-width: 515px;
 }
 .text-title{
     margin-bottom: 23px;
@@ -257,4 +257,61 @@ body {
 .subscribe-form{
     display: flex;
     margin-bottom: 48px;
+}
+@media(max-width: 1200px){
+    .header{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .main{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .subscribe{
+        display: none;
+    }
+    .bookmark-info{
+        display: none;
+    }
+    .tabs{
+        display: block;
+    }
+}
+@media(max-width: 545px){
+    .more{
+        display: none;
+    }
+    .header{
+        display: block;
+    }
+    .user{
+        display: block;
+        float: right;
+        position: relative;
+        bottom: 90px;
+    }
+}
+@media(max-width: 440px){
+    .content{
+        display: block;
+        float: left;
+    }
+    .tabs-item{
+        display: block;
+        margin-top: 7px;
+    }
+    .tabs{
+        display: block;
+        max-width: 30px;
+        margin-left: 0;
+    }
+    .actors-list, .actors-title{
+        display: none;
+    }
+    .movie-info{
+        display: block;
+    }
+    .full-contents{
+        margin-left: 0;
+    }
 }
